@@ -1,0 +1,34 @@
+ <!-- Selectores CSS y Enlaces en JavaScrip -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos con JavaScript</title>
+    <style>
+        .resaltar{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="resaltar">¡Este texto será resaltado con JavaScript</p>
+
+    <p>Haz click en el botón para ir a mi página favorita
+    </p>
+    <button id="botonEnlace">Ir al enlace</button>
+    
+    <script>
+        const parrafoResaltado = document.querySelector('.resaltar');
+        parrafoResaltado.style.fontSize = '20px'
+
+
+        const botonEnlace = document.getElementById('botonEnlace');
+        botonEnlace.addEventListener('click',()=> {
+            window.location.href = 'https://www.google.com'
+        } )
+    </script>
+</body>
+</html>
