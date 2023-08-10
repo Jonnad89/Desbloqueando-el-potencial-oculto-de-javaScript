@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de nuevos elementos</title>
+</head>
+<body>
+    <ul id="lista"></ul>
+
+    <script>
+        const lista = document.getElementById('lista')
+
+        //Crear un nuevo elemento de lista y agregarlo al UL
+        const nuevoItem = document.createElement('li');
+        nuevoItem.textContent = 'Nuevo elemento de lista';
+        lista.appendChild(nuevoItem)
+    </script>
+</body>
+</html>
