@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Bienvenido a mi sitio web</h1>
+    <p id="parrafo">Este es un párrafo de ejemplo</p>
+    
+
+
+    <script>
+        //Seleccionar un elemento por su ID
+        // const titulo = document.getElementById('titulo');
+        // console.log(titulo.textContent);
+
+        //Seleccionar elementos por su clase
+        // const parrafo = document.getElementsByClassName('parrafo');
+        // console.log(parrafo.length)
+
+        //Seleccionar el párrafo por su ID y cambiar su contenido
+        const parrafo = document.getElementById('parrafo');
+        parrafo.textContent = "Este es el nuevo contenido del párrafo."
+//Cambiar el contenido del título utilizando innerHTML
+
+
+        const titulo = document.getElementById('titulo');
+        titulo.innerHTML = "<em>Nueva</em> bienvenida a mi sitio web"
+    </script>
+</body>
+</html>
