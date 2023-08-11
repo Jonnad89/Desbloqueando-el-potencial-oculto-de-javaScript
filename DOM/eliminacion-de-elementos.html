@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación de Elementos</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <button id="eliminar">Eliminar Elemento</button>
+
+
+    <script>
+        const lista = document.getElementById('lista');
+        const botonEliminar = document.getElementById('eliminar');
+
+        botonEliminar.addEventListener('click', () => {
+            //Eliminar el primer elemento de la lista
+            const primerElemento = lista.firstElementChild;
+            lista.removeChild(primerElemento)
+        });
+    </script>
+</body>
+</html>

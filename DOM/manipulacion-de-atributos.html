@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación de Atributos de Elementos</title>
+</head>
+<body>
+    <a id="enlace" href="https://www.ejemplo.com">Enlace de Ejemplo</a>
+
+    <script>
+        const enlace = document.getElementById('enlace');
+
+        // Cambiar la URL del enlace
+        enlace.href = 'https://www.nuevoenlace.com'
+
+        // Cambiar el texto del enlace
+        enlace.textContent = 'Nuevo Enlace'
+    </script>
+</body>
+</html>
